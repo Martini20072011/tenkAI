@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Mensagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #34495e;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #ecf0f1;
+        }
+        p {
+            color: #bdc3c7;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #2c3e50;
+            border: 1px solid #3498db;
+            color: #ecf0f1;
+            font-size: 16px;
+            resize: vertical;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bem-vindo, Chefe!</h1>
+    <p>Cole aqui as mensagens dos fornecedores. Depois, clique em "Analisar Mensagens" para a IA fazer o mapeamento.</p>
+    <textarea id="conteudo-fornecedor">Banana nanica 3,50
+Maçã fuji 7,20
+Melancia inteira 12,00
+Mamão papaya 6,30
+Uva crimson 10,90
+Abacaxi pérola 8,50
+Laranja pera 4,20
+Manga tommy 5,70
+Pera argentina 11,40
+Caqui rama forte 9,00</textarea>
+    <button onclick="salvar()">Analisar Mensagens</button>
+</div>
+
+<script>
+    function salvar() {
+        alert("Análise Iniciada! A Alpha está trabalhando...");
+    }
+</script>
+
+</body>
+</html>
